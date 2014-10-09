@@ -1,0 +1,356 @@
+/*
+ * Author: Francesco Mocci
+ */
+
+body {
+    font-weight: 600;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color:rgba(0, 0, 0, .4);
+    border-color: transparent;
+    z-index: 10;
+    font-weight: 900;
+    
+}
+
+.header .navbar-brand {
+    border-color: rgba(0, 0, 0, .1);
+    
+}
+.header .navbar {
+    background-color: transparent;
+    border-color: transparent;
+    margin: 0;
+}
+
+.header a {
+    border-color: #000000;
+    text-shadow: 2px 2px 4px #000, 2px 2px 4px #ffffff;
+}
+
+.page-section {
+    width: 100%;
+    min-height: 800px;
+    padding: 50px 0;
+    border-bottom: 10px solid #fff;
+}
+.page-section h1 {
+    font-size: 4em;
+    margin: 50px 0;
+}
+.page-section h1 span {
+    font-weight: 200;
+}
+.page-section h2 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 900;
+    color: #fff;
+    margin: 0 0 30px;
+    text-shadow: 2px 2px 2px #000;
+}
+.page-section p {
+    font-size: 1.2em;
+    font-weight: 800;
+    margin: 0 25% 20px 0;
+}
+.page-section p.lead {
+    font-size: 1.8em;
+}
+.page-section p.caption {
+    color: #fff;
+    padding: 20px;
+    background: url(../images/trans_black_25.png);
+    text-shadow: 1px 1px 1px #000;
+    margin: 0 25% 20px 0;
+}
+.page-section.intro {
+    background: url(../images/capo.jpg) no-repeat center top;
+    padding-top: 250px;
+    margin-top: 0px;
+    text-align:center;
+    background-position: center center;
+    min-height: 650px;
+    width: 100%;	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.page-section.intro h1 {
+    color:#ffffff;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    letter-spacing: 4px;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000,-1px -1px 2px #000;
+}
+.page-section.intro h4{
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000,-1px -1px 1px #000;
+}
+
+.page-section#about {
+    background: url(../images/Me.png) bottom center no-repeat;
+}
+
+.btn {
+    font-weight: 200;
+}
+.btn-dark {
+    background: #444;
+    color: #fff;
+}
+.btn-dark:hover {
+    background: #000;
+    color: #fff;
+}
+.back-to-top {
+    display: inline-block;
+    clear: both;
+    background: #fff;
+    color: #333;
+    padding: 0 10px 5px;
+    margin: 20px 0 0;
+    text-shadow: none;
+}
+.back-to-top:hover {
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@media (min-width: 768px) {
+    .header .navbar-brand {
+	padding-left: 0;
+    }
+    .navbar-nav {
+	float: right;
+    }
+}
+@media (max-width: 480px) {
+    .page-section h1 {
+	font-size: 3em;
+    }
+    .page-section h2 {
+	font-size: 2em;
+    }
+    .page-section p {
+	font-size: 1em;
+	margin: 0 0 20px;
+    }
+}
+
+/*--------------------------------------------------
+ *** SOCIAL ***
+ ---------------------------------------------------*/
+
+#social-icons {
+    padding: 0!important;
+    margin: 0!important;
+    list-style-type: none!important;
+    display: block;
+    margin: 0 0 30px;
+    text-align: center;
+    width: 100%;
+    background-color: #F9F9F9;
+}
+
+
+#social-icons h2 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 800;
+    color: #191919;
+    margin: 0 0 30px;
+    text-shadow: 2px 2px 2px #000;
+    margin-left: 5px;
+    
+}
+
+#social-icons hr {
+    border: 0;
+    height: 1px;
+    background-image: 	-webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.90), rgba(0,0,0,0)); 
+    background-image:   -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.90), rgba(0,0,0,0)); 
+    background-image:   -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.90), rgba(0,0,0,0)); 
+    background-image:   -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.90), rgba(0,0,0,0)); 
+}
+
+
+
+#popup_mail h4 {
+    font-size: 1em;
+    font-weight: 600;
+    color: #000;
+    margin: 0 0 10px;
+    text-shadow: 1px 1px 1px #ff0000;
+    text-align: initial;
+    margin-left: 2px;
+    
+}
+
+#popup_skype h4 {
+    font-size: 1em;
+    font-weight: 600;
+    color: #000;
+    margin: 0 0 10px;
+    text-shadow: 1px 1px 1px #2B91AF;
+    text-align: initial;
+    margin-left: 2px;
+    
+}
+
+#social-icons li{
+    width: auto!important;
+    display: inline-block;
+    float: none;
+    
+}			
+
+#social-icons a {
+    -moz-transition: all 0.3s ease 0s;
+    display: block!important;
+    float: left!important;
+    height: 100%!important;
+    margin: 0!important;
+    padding: 0!important;
+    width: 50px!important;
+    height: 50px!important;
+    text-indent: -9999px!important;
+    
+}
+
+
+#social-icons li a:hover {
+    background-position: 0 -46px!important;
+}
+#social-icons a {
+    background-color:transparent;
+}
+
+#social-icons li.google a {
+    background: url(../icons/google.png) no-repeat 0 0;
+}
+#social-icons li.google a:hover {
+    background-color: #ff0000;
+}
+
+#social-icons li.googleplus a {
+    background: url(../icons/googleplus.png) no-repeat 0 0;
+}
+#social-icons li.googleplus a:hover {
+    background-color: #d94a39;
+}
+#social-icons li.linkedin a {
+    background: url(../icons/linkedin.png) no-repeat 0 0;
+}
+#social-icons li.linkedin a:hover {
+    background-color: #71b2d0;
+}
+#social-icons li.skype a {
+    background: url(../icons/skype.png) no-repeat 0 0;
+}
+#social-icons li.skype a:hover {
+    background-color: #18b7f1;
+}
+
+#popup_skype, .bMulti {
+    background-color: #FFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 25px 5px #999;
+    color: #111;
+    display: none;
+    min-width: 450px;
+    min-height: 250px;
+    padding: 25px;
+}
+
+#popup_skype .logo_skype {
+    color: #2B91AF;
+    font: bold 325% 'Petrona',sans;
+}
+
+#popup_mail, .bMulti {
+    background-color: #FFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 25px 5px #999;
+    color: #111;
+    display: none;
+    min-width: 450px;
+    min-height: 250px;
+    padding: 25px;
+}
+
+#popup_mail .logo_mail {
+    color: #ff0000;
+    font: bold 225% 'Petrona',sans;
+}
+
+.button.b-close{
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: none;
+    font: bold 131% sans-serif;
+    padding: 0 6px 2px;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+}
+
+.button {
+    background-color: #2f2f2f;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*--------------------------------------------------
+  FOOTER 
+  ---------------------------------------------------*/
+
+footer {
+    padding-top: 7px;
+    padding-bottom: 5px;
+    background-color: #2f2f2f;
+}
+footer p {
+    color: #f2f2f2;
+    margin-left: 10px;
+    font-size: 10px;
+}
+footer b {
+    text-shadow: 1px 1px 1px #2B91AF;
+    
+}
+
+#footer-left{
+    float: left;
+    text-align:left;
+}
+
+#footer-right{
+    margin-right: 10px;
+    text-align:right;
+}
+
+
