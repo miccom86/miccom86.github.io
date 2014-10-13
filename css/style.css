@@ -30,7 +30,7 @@ body {
 }
 
 .header a {
-    border-color: #000000;
+    border-color: #191919;
     text-shadow: 2px 2px 4px #000, 2px 2px 4px #ffffff;
 }
 
@@ -51,7 +51,7 @@ body {
     text-align: center;
     font-size: 3em;
     font-weight: 900;
-    color: #fff;
+    color: #191919;
     margin: 0 0 30px;
     text-shadow: 2px 2px 2px #000;
 }
